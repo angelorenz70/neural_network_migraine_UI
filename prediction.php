@@ -124,7 +124,16 @@ if($result->prediction == 1){
                 <div class="card-body">
                     <h2 class="title">What's your Migraine?</h2>
                     <h2><?php echo "Name: " . $Name . ", " . $Age . " Years Old"?></h2>
-                    <h2><?php echo "Prediction: " . $result->prediction ?></h2>
+                    <h2><?php echo "Prediction: " . $result->prediction?></h2><br><br>
+
+                    <h4><?php echo "TYPICAL AURA WITH MIGRAINE: " . $result->prob1 . " %" ?></h4>
+                    <h4><?php echo "TYPICAL AURA WITHOUT MIGRAINE: " . $result->prob2 . " %" ?></h4>
+                    <h4><?php echo "MIGRAINE WITHOUT AURA: " . $result->prob3 . " %" ?></h4>
+                    <h4><?php echo "BASILA-TYPE AURA: " . $result->prob4 . " %" ?></h4>
+                    <h4><?php echo "SPORADIC HEMIPLEGIC MIGRAINE: " . $result->prob5 . " %" ?></h4>
+                    <h4><?php echo "FAMILIAL HEMIPLEGIC MIGRAINE: " . $result->prob6 . " %" ?></h4>
+                    <h4><?php echo "OTHER: " . $result->prob7 . " %" ?></h4>
+
                 </div>
             </div>
         </div>
